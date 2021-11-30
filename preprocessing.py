@@ -25,5 +25,12 @@ for col in data.columns:
     print('\t%s: %d' % (col,data[col].isna().sum()))
 
 print('Number of rows in original data = %d' % (data.shape[0]))
-data2 = data.dropna()
-print('Number of rows after discarding missing values = %d' % (data2.shape[0]))
+data = data.dropna()
+print('Number of rows after discarding missing values = %d' % (data.shape[0]))
+
+print('\nNumber of instances = %d' % (data.shape[0]))
+print('Number of attributes = %d' % (data.shape[1]))
+
+print('Number of missing values:')
+for col in data.columns:
+    print('\t%s: %d' % (col,data[col].isna().sum()))
