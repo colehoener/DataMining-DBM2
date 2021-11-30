@@ -30,9 +30,15 @@ print('\n\nNumber of rows in original data = %d' % (data.shape[0]))
 data = data.dropna()
 print('Number of rows after discarding missing values = %d\n' % (data.shape[0]))
 
+#Number
+print('Number of instances = %d' % (data.shape[0]))
+print('Number of attributes = %d\n' % (data.shape[1]))
+
 ##Check to make sure there are no missing values in each column
 print('Number of missing values:')
 for col in data.columns:
     print('\t%s: %d' % (col,data[col].isna().sum()))
+
+data.boxplot(figsize=(17,3))
 
 print("\n\nPreprocessing done.")
