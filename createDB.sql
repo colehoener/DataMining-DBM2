@@ -6,7 +6,7 @@ CREATE TABLE financialData (
     dividend DECIMAL,
     earnings DECIMAL,
     CPI DECIMAL,
-    fraction_date DATE,
+    fraction_date DECIMAL,
     long_interest_rate DECIMAL,
     real_price DECIMAL,
     real_dividend DECIMAL,
